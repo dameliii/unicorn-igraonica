@@ -1,0 +1,403 @@
+/* ========================МАIN Photo========================== */
+/* текст */
+.carousel-item {
+  height: 80vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* затемнение */
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* текст */
+.carousel-caption-custom {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.carousel-caption-custom h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#mozg-ne-jebi{
+  padding-top: 4em;
+}
+
+.carousel-caption-custom p {
+  font-size: 1.5rem;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3;
+}
+
+#btn{
+  background-color: gray;
+  border: none;
+}
+
+/* =============================PARTNERS Circles============================ */
+
+.circle-item {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* КАРТИНКА */
+.circle-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border:solid #7fa6d9;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* SVG С ТЕКСТОМ */
+.circle-text {
+  position: absolute;
+  width: 200px;
+  height: 170px;
+  fill: #7fa6d9;
+  font-size: 18px;
+  letter-spacing: 2px;
+  z-index: 2;
+
+  /* 🔑 ВАЖНО */
+  pointer-events: none;
+}
+
+/* 🔥 КЛИКАБЕЛЕН ТОЛЬКО ТЕКСТ */
+.circle-text text {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* ЭФФЕКТ */
+.circle-text text:hover {
+  fill: #ff7aa2;
+}
+
+
+
+/* 
+вращение текста
+.circle-text {
+  animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate {
+  to { transform: rotate(360deg); }
+}
+.circle-item:hover .circle-text {
+  animation-play-state: paused;
+}
+
+ */
+
+/* ===================================================================================== */
+
+/* ========================================buttoms============================= */
+
+.category-card {
+  cursor: pointer;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.category-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* .circle-link {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 4px solid #4da3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+} */
+
+/* .circle-link img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+} */
+
+/* .circle-link:hover {
+  border-color: #ff7aa2;
+  transform: scale(1.05);
+} */
+
+
+/* ==========================================Additionally=============================== */
+.price-extra {
+  padding: 80px 20px;
+}
+
+.price-box {
+  background: #79aee3;
+  border-radius: 40px;
+  padding: 40px 30px;
+  max-width: 1100px;
+  margin: auto;
+  color: #fff;
+}
+
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.service {
+  white-space: nowrap;
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 2px dotted rgba(255,255,255,0.7);
+  margin: 0 12px;
+  transform: translateY(-2px);
+}
+
+.price {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.sub-title {
+  margin: 30px 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+/* responsive */
+@media (max-width: 576px) {
+
+  .price-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 18px;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .price {
+    font-weight: 700;
+  }
+
+}
+
+
+/* ==================== menu ========================== */
+
+ .menu-section {
+  padding: 80px 20px;
+}
+
+.menu-wrapper {
+  max-width: 1400px;   /* ключевой момент */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-title {
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.menu-img {
+  width: 100%;
+  max-width: 1200px;   /* НЕ больше чем нужно */
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 768px) {
+  .menu-img {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+}
+
+
+/* ======================== contact ===================== */
+
+.contacts-section {
+  padding: 80px 20px;
+  background: #f8f9fb;
+}
+
+.contacts-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 26px;
+  background: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-width: 260px;
+}
+
+.contact-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.text {
+  text-align: left;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.value {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* ============================= footer ===================== */
+
+.site-footer {
+  background: #1f2933;
+  color: #ffffff;
+  padding: 60px 0 20px;
+  font-size: 15px;
+}
+
+.site-footer a {
+  color: #9fd3ff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-block h5 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-block p {
+  margin-bottom: 8px;
+}
+
+.made-by {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+  }
+
+}
