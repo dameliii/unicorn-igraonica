@@ -58,14 +58,14 @@
 
 
  .carousel-caption-custom h2 {
-  font-size: clamp(30px, 4vw, 48px);
+  font-size: clamp(24px, 4vw, 48px);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 .carousel-caption-custom p {
-  font-size: clamp(20px, 2vw, 18px);
+  font-size: clamp(14px, 2vw, 18px);
   line-height: 1.6;
   opacity: 0.95;
 } 
