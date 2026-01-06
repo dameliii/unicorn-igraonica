@@ -54,6 +54,27 @@
   border: none;
 }
 
+
+
+
+.carousel-caption-custom h2 {
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.carousel-caption-custom p {
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.6;
+  opacity: 0.95;
+}
+.carousel-caption-custom .btn {
+  padding: 10px 28px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
 /* =============================PARTNERS Circles============================ */
 
 .circle-item {
