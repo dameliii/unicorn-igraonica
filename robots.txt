@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://github.com/dameliii/unicorn-igraonica/blob/main/sitemap.xml
+Host: https://unicorn-igraonica.me/
+Sitemap: https://unicorn-igraonica.me/sitemap.xml
