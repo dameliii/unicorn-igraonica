@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en ru rs">
+<head>
+  <meta charset="UTF-8">
+  <title>Unicorn igraonica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+  <link rel="stylesheet" href="../style.css">
+   
+
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .section-padding {
+      padding: 80px 0;
+    }
+    .price-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .menu-image {
+      height: 450px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+  
+  <div class="container px-4">
+    <a class="navbar-brand fw-bold fs-4" href="#">
+      <img src="img/unicorn--logo.png" width="50px" alt="logo"> Unicorn-игровая
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="#calendar">Календарь</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#prices">Ценны & Меню</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#location">Локация</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </li>
+
+
+
+        <li class="lang-switch">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="me">ME</button>
+          <button class="lang-btn" data-lang="tr">TR</button>
+          <button class="lang-btn active" data-lang="ru">RU</button>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="height: 70px"></div>
+
+<!-- ================= CAROUSEL ================= -->
+ 
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active position-relative">
+      <img src="img/main pictures/roomplay.png" class="d-block w-100" alt="игровая комната">
+      <!-- DARK OVERLAY -->
+      <div class="carousel-overlay"></div>
+      <!-- TEXT -->
+      <div class="carousel-caption-custom">
+        <h2>Добро пожаловать</h2>
+        <p>
+          в новую игровую комнату "Unicorn"<br>
+          в Радановичах, в торговом центре Butico. Вы можете поесть в ресторане 
+          и заняться покупками, пока аниматор присматривает за вашим ребёнком.  
+          Мы работаем с 11:00 до 20:00
+        </p>
+      </div>
+    </div>
+
+
+    <div class="carousel-item position-relative">
+      <img src="img/main pictures/img1.png" class="d-block w-100" alt="день рождения">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-caption-custom">
+        <h2>Праздники</h2>
+        <p class="mt-3">Вы можете отпраздновать день рождения в нашей игровой комнате. У нас есть несколько вариантов 😉</p>
+        <a href="#prices" class="btn btn-primary mt-2" id="btn">Цены</a>
+      </div>
+    </div>
+
+    <div class="carousel-item position-relative">
+      <img src="img/main pictures/img2.png" class="d-block w-100" alt="игра">
+      <div class="carousel-overlay"></div>
+      <div class="carousel-caption-custom">
+        <h2>Календарь событий</h2>
+        <p class="mt-3">
+          На нашем сайте вы можете узнать, когда игровая комната закрыта для аренды или уборки.  
+          А также посмотреть, когда проводятся аквагрим и другие интерактивные мероприятия.
+        </p>
+       <a href="#calendar" class="btn btn-primary mt-2" id="btn">Календарь</a>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- ================= PRICES ================= -->
+<section id="prices" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Цены</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card price-card h-100 shadow-sm">
+          <img src="img/prices img/img1.jpg" class="card-img-top" alt="открытый пакет">
+          <div class="card-body">
+            <h5 class="card-title pb-4" style="font-size: 1.5em;">Открытый пакет</h5>
+              <p class="card-text">
+                <span style="font-size: 1.2em;">1 час • Аниматор + бумажная дискотека</span> <br>
+                Пакет включает аниматора и бумажную дискотеку на 1 час. После этого дети могут оставаться в игровой комнате.
+                Игровая комната остаётся открытой для других посетителей.
+              </p>
+            <p class="fw-bold">15 € за ребёнка</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card price-card h-100 shadow-sm">
+          <img src="img/prices img/img2.jpg" class="card-img-top" alt="аренда">
+          <div class="card-body">
+            <h5 class="card-title pb-4" style="font-size: 1.5em;">Пакет аренды</h5>
+            <p class="card-text">
+              Декор шарами без гелия и одноразовая посуда.
+              Дети могут оставаться в игровой, если нет частного мероприятия.
+            </p>
+            <p class="fw-bold">100 € / час</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card price-card h-100 shadow-sm">
+          <img src="img/prices img/img3.jpg" class="card-img-top" alt="vip">
+           <div class="card-body">
+            <h5 class="card-title pb-4" style="font-size: 1.5em;">VIP пакет</h5>
+              <p class="card-text">
+                <span style="font-size: 1.2em;">4 часа • Аниматор + бумажная дискотека + bubble show</span> <br>
+                Игровая комната закрывается для других посетителей на 4 часа — только ваши гости.
+                Аниматор проводит программу с детьми, включая bubble show и бумажную дискотеку.
+                (Программа рассчитана на 20 детей. Доплата 50 € за каждые дополнительные 10 детей).
+                Требуется бронирование (депозит: 10 € за ребёнка, 20 € за взрослого, 35 € за место).
+              </p>
+            <p class="fw-bold">500 €</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ====================ADDITIONALLY==================== -->
+
+<section class="price-extra">
+  <h2 class="text-center mb-5 fw-bold">Дополнительно</h2>
+  <div class="price-box">
+
+    <ul class="price-list">
+
+      <li class="price-item">
+        <span class="service">Ростовая кукла (1 час)</span>
+        <span class="dots"></span>
+        <span class="price">50 €</span>
+      </li>
+
+      <li class="price-item">
+        <span class="service">Оформление гелиевыми шарами (от 20 шт.)</span>
+        <span class="dots"></span>
+        <span class="price">от 60 €</span>
+      </li>
+
+      <li class="price-item">
+        <span class="service">Торт (1.5 кг)</span>
+        <span class="dots"></span>
+        <span class="price">от 70 €</span>
+      </li>
+
+      <li class="price-item">
+        <span class="service">Фотограф (1 час + обработка)</span>
+        <span class="dots"></span>
+        <span class="price">100 €</span>
+      </li>
+
+      <li class="price-item">
+        <span class="service">Видеограф (1 час)</span>
+        <span class="dots"></span>
+        <span class="price">100 €</span>
+      </li>
+
+      <li class="price-item">
+        <span class="service">Аквагрим (12 человек – 1 час)</span>
+        <span class="dots"></span>
+        <span class="price">70 €</span>
+      </li>
+
+    </ul>
+
+    <div class="sub-title">Шоу на выбор:</div>
+
+    <ul class="price-list">
+
+      <li class="price-item">
+        <span class="service">Фокусник</span>
+        <span class="dots"></span>
+        <span class="price">от 150 €</span>
+      </li>
+
+      <li class="price-item">
+        <span class="service">Квест</span>
+        <span class="dots"></span>
+        <span class="price">от 200 €</span>
+      </li>
+
+      <li class="price-item">
+        <span class="service">Мастер-класс</span>
+        <span class="dots"></span>
+        <span class="price">от 100 €</span>
+      </li>
+
+    </ul>
+
+    <div class="note">И другие предложения</div>
+
+  </div>
+</section>
+
+
+<!-- ================= Partners ================= -->
+ 
+
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-3 fw-bold">Сотрудничаем</h2>
+    <p class="mb-5">вы можете приглосить к себе наших партнеров</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- ANIMATORS -->
+      <div class="col-md-4 col-12">
+        <div
+          class="category-card"
+          data-bs-toggle="collapse"
+          data-bs-target="#animators">
+          <img src="img/basketball_248644.png" alt="">
+          <h5>Аниматоры</h5>
+        </div>
+        <div id="animators" class="collapse mt-3">
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+
+        <!-- ======circle1======= -->
+        <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+            </defs>
+            <a href="https://www.instagram.com/dream.dram.theatre/?hl=en" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">_____dream dram</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="img/Dream_drama.jpg">
+      </div>
+
+      <!-- ======circle2======= -->
+      <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+            </defs>
+
+            <a href="https://www.instagram.com/animators_montenegro/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">Animators Montenegro</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="/img/Animators_montenegro.jpg">
+      </div>
+
+      <!-- ======circle3======= -->
+      <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+            </defs>
+            <a href="https://www.instagram.com/animator_budva/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">___Animator_budva</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="/img/Animator_budva.jpg">
+      </div>
+
+      <!-- ======circle4======= -->
+      <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+            </defs>
+            <a href="https://www.instagram.com/papaparty.me/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">_______Papa party</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="/img/Papa_party.jpg">
+      </div>
+
+      <!-- ======circle5======= -->
+      <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+            </defs>
+            <a href="https://www.instagram.com/animator_volshebnitsa/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">Animator Volshebnitsa</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="/img/animator_volshebnitsa.jpg">
+      </div>
+
+      <!-- ======circle6======= -->
+      <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+            </defs>
+            <a href="https://www.instagram.com/veselov_show/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">______Фокусник</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="/img/veselov_show.jpg">
+      </div>
+
+      <!-- ======circle7======= -->
+      <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+            </defs>
+            <a href="https://www.instagram.com/show.mne/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">______Show.mne</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="/img/show_mne.jpg">
+      </div>
+
+     </div>
+   </div>
+ </div>
+
+ <!-- DECORATORS -->
+ <div class="col-md-4 col-12">
+   <div
+     class="category-card"
+     data-bs-toggle="collapse"
+     data-bs-target="#decorators">
+     <img src="img/icon-decor.png" alt="">
+     <h5>Декораторы</h5>
+  </div>
+
+  <div id="decorators" class="collapse mt-3">
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <!-- ======circle1======= -->
+      <div class="circle-item">
+        <svg viewBox="0 0 200 200" class="circle-text">
+          <defs>
+            <path id="circlePath-a1"
+                  d="M100,100 m-80,0
+                    a80,80 0 1,1 160,0
+                    a80,80 0 1,1 -160,0" />
+              </defs>
+              <a href="https://www.instagram.com/elena_baloni_bu2/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">_____bom_babloni</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="/img/bom-naloni.jpg">
+      </div>
+      <!-- ======circle2======= -->
+      <div class="circle-item">
+      <svg viewBox="0 0 200 200" class="circle-text">
+        <defs>
+          <path id="circlePath-a1"
+                d="M100,100 m-80,0
+                  a80,80 0 1,1 160,0
+                  a80,80 0 1,1 -160,0" />
+            </defs>
+            <a href="https://www.instagram.com/decor.symphony.me/" target="_blank">
+              <text>
+                <textPath href="#circlePath-a1" startOffset="0%">____decor_symphony</textPath>
+              </text>
+            </a>
+          </svg>
+        <img src="img/decor_symphony.jpg">
+      </div>
+      <!-- ======circle3======= -->
+          <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+                </defs>
+                <a href="https://www.instagram.com/cake.dora/" target="_blank">
+                  <text>
+                    <textPath href="#circlePath-a1" startOffset="0%">_______cake dora</textPath>
+                  </text>
+                </a>
+              </svg>
+            <img src="img/cake dora.jpg">
+          </div>
+          
+          <!-- ======circle4======= -->
+          <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+                </defs>
+                <a href="#https://www.instagram.com/happyballoonstivat/" target="_blank">
+                  <text>
+                    <textPath href="#circlePath-a1" startOffset="0%">______happy balloons</textPath>
+                  </text>
+                </a>
+              </svg>
+            <img src="img/happy balloons.jpg">
+          </div>
+
+          <!-- ======circle5======= -->
+          <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+                  </defs>
+                  <a href="https://www.instagram.com/tatiana_cake.montenegro/" target="_blank">
+                    <text>
+                      <textPath href="#circlePath-a1" startOffset="0%">______Tatiana cake</textPath>
+                    </text>
+                  </a>
+                </svg>
+              <img src="img/tatiana cake.jpg">
+            </div>
+
+            <!-- ======circle6======= -->
+          <div class="circle-item">
+          <svg viewBox="0 0 200 200" class="circle-text">
+            <defs>
+              <path id="circlePath-a1"
+                    d="M100,100 m-80,0
+                      a80,80 0 1,1 160,0
+                      a80,80 0 1,1 -160,0" />
+                </defs>
+                <a href="https://www.instagram.com/weddingstudiotalija/" target="_blank">
+                  <text>
+                    <textPath href="#circlePath-a1" startOffset="0%">____flower_shop Talija</textPath>
+                  </text>
+                </a>
+              </svg>
+            <img src="img/flower shop talija.jpg">
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTOGRAPHERS -->
+      <div class="col-md-4 col-12">
+        <div
+          class="category-card"
+          data-bs-toggle="collapse"
+          data-bs-target="#photographers">
+          <img src="img/icon-photo.png">
+          <h5>Фотографы</h5>
+        </div>
+
+        <div id="photographers" class="collapse mt-3">
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+                <!-- ======circle1======= -->
+                <div class="circle-item">
+                <svg viewBox="0 0 200 200" class="circle-text">
+                  <defs>
+                    <path id="circlePath-a1"
+                          d="M100,100 m-80,0
+                            a80,80 0 1,1 160,0
+                            a80,80 0 1,1 -160,0" />
+                    </defs>
+                    <a href="https://photoblag.ru/" target="_blank">
+                      <text>
+                        <textPath href="#circlePath-a1" startOffset="0%">Vadim Blagoveshchenskii</textPath>
+                      </text>
+                    </a>
+                  </svg>
+                <img src="img/vadim blahoveshchenskii.jpg">
+              </div>
+
+              <!-- ======circle2======= -->
+                <div class="circle-item">
+                <svg viewBox="0 0 200 200" class="circle-text">
+                  <defs>
+                    <path id="circlePath-a1"
+                          d="M100,100 m-80,0
+                            a80,80 0 1,1 160,0
+                            a80,80 0 1,1 -160,0" />
+                      </defs>
+                      <a href="https://www.instagram.com/photographer.montenegro/" target="_blank">
+                        <text>
+                          <textPath href="#circlePath-a1" startOffset="0%">photographer Budva Tivat Kotor</textPath>
+                        </text>
+                      </a>
+                    </svg>
+                  <img src="img/photografer budva tivat kotor.jpg">
+                </div>
+
+                <!-- ======circle3======= -->
+                <div class="circle-item">
+                <svg viewBox="0 0 200 200" class="circle-text">
+                  <defs>
+                    <path id="circlePath-a1"
+                          d="M100,100 m-80,0
+                            a80,80 0 1,1 160,0
+                            a80,80 0 1,1 -160,0" />
+                  </defs>
+                  <a href="https://www.instagram.com/novikov_dop/" target="_blank">
+                    <text>
+                      <textPath href="#circlePath-a1" startOffset="0%">__Liosha Novikov</textPath>
+                    </text>
+                  </a>
+                </svg>
+              <img src="img/liosha novikov.jpg">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= MENU IMAGE ================= -->
+ <section class="menu-section">
+  <div class="menu-wrapper">
+    <h2 class="menu-title">Меню</h2>
+
+    <img 
+      src="img/menu.jpg"
+      alt="Menu"
+      class="menu-img"
+    >
+  </div>
+</section>
+
+
+
+<!-- ================= CALENDAR ================= -->
+<section id="calendar" class="section-padding">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Календарь событий</h2>
+
+    <div class="ratio ratio-16x9">
+       
+        <iframe src="https://calendar.google.com/calendar/embed?src=leadership.unicorn.world%40gmail.com&ctz=Europe%2FBelgrade" style="border: 0" width="800" height="800" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section id="location" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Локация игровой</h2>
+
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22683.00816208325!2d18.733712415688856!3d42.37299914232213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c2d0042d7da03%3A0x7ec30118054f74ff!2sIgraonica%20Unicorn!5e0!3m2!1sru!2s!4v1767301764248!5m2!1sru!2s"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================== CONTACT ==================== -->
+ <section id="contacts" class="contacts-section">
+  <div class="container text-center">
+
+    <h2 class="fw-bold mb-4">Contacts</h2>
+
+    <div class="contacts-box">
+
+      <!-- PHONE -->
+      <a href="tel:+1234567890" class="contact-item">
+        <div class="icon">📞</div>
+        <div class="text">
+          <span class="label">Phone</span>
+          <span class="value">+382 69 489 854</span>
+        </div>
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a href="https://www.instagram.com/kids_club_tivat" target="_blank" class="contact-item">
+        <div class="icon">
+          <img src="img/unicorn--logo.png" width="50px">
+        </div>
+        <div class="text">
+          <span class="label">Our Instagram</span>
+          <span class="value">@kids_club_tivat</span>
+        </div>
+      </a>
+
+      <!-- INSTAGRAM RESTORANT -->
+      <a href="https://www.instagram.com/osteriagrano.me/" target="_blank" class="contact-item">
+        <div class="icon">
+          <img src="img/logo-restorant.png" width="50px">
+        </div>
+        <div class="text">
+          <span class="label">Restorant Instagram</span>
+          <span class="value">@osteria grano</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+ <footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-content">
+
+      <!-- LEFT: AUTHOR -->
+      <div class="footer-block footer-left">
+        <p class="made-by">
+          Website created by<br>
+          <strong>Dameli Sapargaliyeva</strong>
+        </p>
+      </div>
+
+      <!-- RIGHT: CONTACTS -->
+      <div class="footer-block footer-right">
+        <h5>Contacts</h5>
+
+        <p>
+          Phone:
+          <a href="tel:+382 68 563 502">+382 68 563 502</a>
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:sdameli18@gmail.com">sdameli18@gmail.com</a>
+        </p>
+
+        <p>
+          Instagram:
+          <a href="https://instagram.com/yourinstagram" target="_blank">
+            @-
+          </a>
+        </p>
+
+        <p>
+          YouTube:
+          <a href="https://youtube.com/@yourchannel" target="_blank">
+            @-
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 All rights reserved
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../lang.js"></script>
+</body>
+</html>
